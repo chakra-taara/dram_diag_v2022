@@ -1,10 +1,4 @@
  Enter 'h' to print help menu
- Enter Test Option: 
-
-
- 	Bus Width = 64,   D-cache is enable,   Verbose Mode is OFF,   DDR ECC is DISABLED
-
- Enter 'h' to print help menu
  Enter Test Option: 4
 
 Starting Memory Test...
