@@ -1,0 +1,51 @@
+22:16:44 **** Build of configuration Debug for project dram_diag ****
+make all 
+Building file: ../src/xmt_common.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xmt_common.o" -I/home/chakra/work/dram_diag_2022/ws/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xmt_common.d" -MT"src/xmt_common.o" -o "src/xmt_common.o" "../src/xmt_common.c"
+../src/xmt_common.c: In function 'XMt_ReadMprVRef':
+../src/xmt_common.c:649:9: warning: this 'while' clause does not guard... [-Wmisleading-indentation]
+  649 |         while (Xil_In32(XMT_DDRC_MRSTAT) & XMT_DDR_MR_WR_BUSY);
+      |         ^~~~~
+In file included from ../src/xmt_common.c:42:
+../src/xmt_common.h:320:45: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'while'
+  320 | #define XMT_MASK_WRITE(Offset, Mask, Value) {\
+      |                                             ^~
+  321 |         u32 RegVal = 0x0;\
+      |                                              
+../src/xmt_common.h:320:45: note: in definition of macro 'XMT_MASK_WRITE'
+  320 | #define XMT_MASK_WRITE(Offset, Mask, Value) {\
+      |                                             ^~
+  321 |         u32 RegVal = 0x0;\
+      |                                              
+Finished building: ../src/xmt_common.c
+ 
+Building file: ../src/xmt_main.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xmt_main.o" -I/home/chakra/work/dram_diag_2022/ws/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xmt_main.d" -MT"src/xmt_main.o" -o "src/xmt_main.o" "../src/xmt_main.c"
+Finished building: ../src/xmt_main.c
+ 
+Building file: ../src/xmt_read_eye.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xmt_read_eye.o" -I/home/chakra/work/dram_diag_2022/ws/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xmt_read_eye.d" -MT"src/xmt_read_eye.o" -o "src/xmt_read_eye.o" "../src/xmt_read_eye.c"
+Finished building: ../src/xmt_read_eye.c
+ 
+Building file: ../src/xmt_write_eye.c
+Invoking: ARM v8 gcc compiler
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xmt_write_eye.o" -I/home/chakra/work/dram_diag_2022/ws/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bspinclude/include -MMD -MP -MF"src/xmt_write_eye.d" -MT"src/xmt_write_eye.o" -o "src/xmt_write_eye.o" "../src/xmt_write_eye.c"
+Finished building: ../src/xmt_write_eye.c
+ 
+Building target: dram_diag.elf
+Invoking: ARM v8 gcc linker
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -L/home/chakra/work/dram_diag_2022/ws/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_psu_cortexa53_0/bsplib/lib -o "dram_diag.elf" ./src/xmt_common.o ./src/xmt_main.o ./src/xmt_read_eye.o ./src/xmt_write_eye.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: dram_diag.elf
+ 
+Invoking: ARM v8 Print Size
+aarch64-none-elf-size dram_diag.elf  |tee "dram_diag.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  69324	   5840	  20668	  95832	  17658	dram_diag.elf
+Finished building: dram_diag.elf.size
+ 
+
+22:16:45 Build Finished (took 437ms)
+

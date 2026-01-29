@@ -1,0 +1,4 @@
+activeuserprofiles=01-DES-03-0011;Team;fpga-shared-vm
+eclipse.preferences.version=1
+org.eclipse.rse.systemtype.local.systemType.defaultUserId=?
+useridperkey=fpga-shared-vm.Local\=?;

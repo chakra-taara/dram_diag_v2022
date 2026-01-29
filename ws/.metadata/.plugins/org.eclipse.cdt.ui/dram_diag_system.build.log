@@ -1,0 +1,10 @@
+22:16:45 **** Build of configuration Debug for project dram_diag_system ****
+make all 
+Generating bif file for the system project
+Executing command '::scw::generate_bif -xpfm /home/chakra/work/dram_diag_2022/ws/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm -domains standalone_psu_cortexa53_0 -bifpath /home/chakra/work/dram_diag_2022/ws/dram_diag_system/Debug/system.bif' on XSCT
+sdcard_gen --xpfm /home/chakra/work/dram_diag_2022/ws/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm --sys_config design_1_wrapper --bif /home/chakra/work/dram_diag_2022/ws/dram_diag_system/Debug/system.bif --bitstream /home/chakra/work/dram_diag_2022/ws/dram_diag/_ide/bitstream/design_1_wrapper.bit --elf /home/chakra/work/dram_diag_2022/ws/dram_diag/Debug/dram_diag.elf,psu_cortexa53_0
+creating BOOT.BIN using /home/chakra/work/dram_diag_2022/ws/dram_diag/_ide/bitstream/design_1_wrapper.bit
+Running /tools/Xilinx/Vitis/2022.1/bin/bootgen -arch zynqmp -image /home/chakra/work/dram_diag_2022/ws/dram_diag_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+22:16:51 Build Finished (took 5s.290ms)
+
