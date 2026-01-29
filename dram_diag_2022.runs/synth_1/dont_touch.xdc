@@ -7,4 +7,4 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1 ||
 # IP: bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_zynq_ultra_ps_e_0_0 || ORIG_REF_NAME==design_1_zynq_ultra_ps_e_0_0} -quiet] -quiet
 
-# XDC: /home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/design_1_ooc.xdc
+# XDC: /home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/design_1_ooc.xdc

@@ -2,12 +2,12 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Jan 28 14:03:05 2026
-# Process ID: 1418727
-# Current directory: /home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1
+# Start of session at: Thu Jan 29 13:52:39 2026
+# Process ID: 313494
+# Current directory: /home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file: /home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/design_1_wrapper.vds
-# Journal file: /home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/vivado.jou
-# Running On: fpga-shared-vm.us-central1-a.c.taara-workstations-4e.internal, OS: Linux, CPU Frequency: 2695.948 MHz, CPU Physical cores: 32, Host memory: 392831 MB
+# Log file: /home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/vivado.jou
+# Running On: fpga-shared-vm.us-central1-a.c.taara-workstations-4e.internal, OS: Linux, CPU Frequency: 4136.346 MHz, CPU Physical cores: 32, Host memory: 392831 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

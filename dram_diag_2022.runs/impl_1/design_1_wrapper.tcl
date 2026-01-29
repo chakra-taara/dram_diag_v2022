@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "/home/chakra/work/dram_diag_2022/dram_diag_2022.runs/impl_1/design_1_wrapper.tcl"
+  variable script "/home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/impl_1/design_1_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,13 +123,9 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_param power.enableLutRouteBelPower 1
-  set_param power.enableCarry8RouteBelPower 1
-  set_param power.enableUnconnectedCarry8PinPower 1
   set_param chipscope.maxJobs 23
-  set_param power.BramSDPPropagationFix 1
   open_checkpoint design_1_wrapper_routed.dcp
-  set_property webtalk.parent_dir /home/chakra/work/dram_diag_2022/dram_diag_2022.cache/wt [current_project]
+  set_property webtalk.parent_dir /home/chakra/repos/dram_diag_v2022/dram_diag_2022.cache/wt [current_project]
 set_property TOP design_1_wrapper [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

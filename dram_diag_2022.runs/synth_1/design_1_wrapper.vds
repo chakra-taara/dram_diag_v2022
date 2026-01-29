@@ -2,13 +2,13 @@
 # Vivado v2022.1 (64-bit)
 # SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
 # IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
-# Start of session at: Wed Jan 28 14:03:05 2026
-# Process ID: 1418727
-# Current directory: /home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1
+# Start of session at: Thu Jan 29 13:52:39 2026
+# Process ID: 313494
+# Current directory: /home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
-# Log file: /home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/design_1_wrapper.vds
-# Journal file: /home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/vivado.jou
-# Running On: fpga-shared-vm.us-central1-a.c.taara-workstations-4e.internal, OS: Linux, CPU Frequency: 2695.948 MHz, CPU Physical cores: 32, Host memory: 392831 MB
+# Log file: /home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/vivado.jou
+# Running On: fpga-shared-vm.us-central1-a.c.taara-workstations-4e.internal, OS: Linux, CPU Frequency: 4136.346 MHz, CPU Physical cores: 32, Host memory: 392831 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
@@ -26,78 +26,78 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1418865
+INFO: [Synth 8-7075] Helper process launched with PID 313666
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3132.105 ; gain = 209.828 ; free physical = 142131 ; free virtual = 319806
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3132.109 ; gain = 211.828 ; free physical = 127642 ; free virtual = 326090
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/.Xil/Vivado-1418727-fpga-shared-vm.us-central1-a.c.taara-workstations-4e.internal/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [/home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/.Xil/Vivado-1418727-fpga-shared-vm.us-central1-a.c.taara-workstations-4e.internal/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:5]
-WARNING: [Synth 8-7071] port 'maxigp2_awid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awaddr' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awlen' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awsize' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awburst' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awlock' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awcache' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awprot' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_wdata' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_wstrb' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_wlast' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_wvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_bready' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_araddr' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arlen' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arsize' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arburst' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arlock' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arcache' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arprot' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_rready' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_awqos' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'maxigp2_arqos' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7071] port 'pl_resetn0' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 42 connections declared, but only 13 given [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
-INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:12]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/.Xil/Vivado-313494-fpga-shared-vm.us-central1-a.c.taara-workstations-4e.internal/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_0' (0#1) [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/.Xil/Vivado-313494-fpga-shared-vm.us-central1-a.c.taara-workstations-4e.internal/realtime/design_1_zynq_ultra_ps_e_0_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'maxigp2_awid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awaddr' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awlen' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awsize' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awburst' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awlock' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awcache' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awprot' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awuser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_wdata' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_wstrb' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_wlast' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_wvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_bready' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_araddr' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arlen' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arsize' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arburst' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arlock' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arcache' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arprot' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arvalid' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_aruser' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_rready' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_awqos' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'maxigp2_arqos' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7071] port 'pl_resetn0' of module 'design_1_zynq_ultra_ps_e_0_0' is unconnected for instance 'zynq_ultra_ps_e_0' [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'design_1_zynq_ultra_ps_e_0_0' has 42 connections declared, but only 13 given [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3192.074 ; gain = 269.797 ; free physical = 141827 ; free virtual = 319503
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3192.078 ; gain = 271.797 ; free physical = 127362 ; free virtual = 325811
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3209.887 ; gain = 287.609 ; free physical = 141827 ; free virtual = 319503
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3209.891 ; gain = 289.609 ; free physical = 127360 ; free virtual = 325809
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3209.887 ; gain = 287.609 ; free physical = 141827 ; free virtual = 319503
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3209.891 ; gain = 289.609 ; free physical = 127360 ; free virtual = 325809
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3209.887 ; gain = 0.000 ; free physical = 141827 ; free virtual = 319503
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3209.891 ; gain = 0.000 ; free physical = 127360 ; free virtual = 325809
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
-Finished Parsing XDC File [/home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
-Parsing XDC File [/home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [/home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3294.699 ; gain = 0.000 ; free physical = 142559 ; free virtual = 320235
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3294.703 ; gain = 0.000 ; free physical = 128409 ; free virtual = 326858
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3294.699 ; gain = 0.000 ; free physical = 142559 ; free virtual = 320235
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3294.703 ; gain = 0.000 ; free physical = 128409 ; free virtual = 326858
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.699 ; gain = 372.422 ; free physical = 142776 ; free virtual = 320451
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.703 ; gain = 374.422 ; free physical = 128604 ; free virtual = 327052
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -105,7 +105,7 @@ Start Loading Part and Timing Information
 Loading part: xczu9cg-ffvb1156-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.699 ; gain = 372.422 ; free physical = 142773 ; free virtual = 320448
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.703 ; gain = 374.422 ; free physical = 128603 ; free virtual = 327052
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -113,10 +113,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.699 ; gain = 372.422 ; free physical = 142769 ; free virtual = 320444
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.703 ; gain = 374.422 ; free physical = 128603 ; free virtual = 327052
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.699 ; gain = 372.422 ; free physical = 142753 ; free virtual = 320430
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.703 ; gain = 374.422 ; free physical = 128585 ; free virtual = 327035
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -139,25 +139,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3294.699 ; gain = 372.422 ; free physical = 142572 ; free virtual = 320252
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 3294.703 ; gain = 374.422 ; free physical = 128358 ; free virtual = 326810
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3690.785 ; gain = 768.508 ; free physical = 142325 ; free virtual = 320005
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3690.359 ; gain = 770.078 ; free physical = 127773 ; free virtual = 326226
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3690.785 ; gain = 768.508 ; free physical = 142325 ; free virtual = 320005
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3690.359 ; gain = 770.078 ; free physical = 127773 ; free virtual = 326226
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3709.816 ; gain = 787.539 ; free physical = 142309 ; free virtual = 319990
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 3709.391 ; gain = 789.109 ; free physical = 127875 ; free virtual = 326328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -175,37 +175,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3715.754 ; gain = 793.477 ; free physical = 142585 ; free virtual = 320266
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3715.328 ; gain = 795.047 ; free physical = 128045 ; free virtual = 326498
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3715.754 ; gain = 793.477 ; free physical = 142585 ; free virtual = 320266
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3715.328 ; gain = 795.047 ; free physical = 128045 ; free virtual = 326498
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3715.754 ; gain = 793.477 ; free physical = 142585 ; free virtual = 320266
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3715.328 ; gain = 795.047 ; free physical = 128044 ; free virtual = 326497
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3715.754 ; gain = 793.477 ; free physical = 142585 ; free virtual = 320266
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3715.328 ; gain = 795.047 ; free physical = 128042 ; free virtual = 326495
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3715.754 ; gain = 793.477 ; free physical = 142585 ; free virtual = 320266
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3715.328 ; gain = 795.047 ; free physical = 128042 ; free virtual = 326495
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3715.754 ; gain = 793.477 ; free physical = 142585 ; free virtual = 320266
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3715.328 ; gain = 795.047 ; free physical = 128042 ; free virtual = 326495
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -225,16 +225,16 @@ Report Cell Usage:
 |1     |design_1_zynq_ultra_ps_e_0 |     1|
 +------+---------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3715.754 ; gain = 793.477 ; free physical = 142585 ; free virtual = 320266
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3715.328 ; gain = 795.047 ; free physical = 128038 ; free virtual = 326491
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3715.754 ; gain = 708.664 ; free physical = 142593 ; free virtual = 320273
-Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 3715.762 ; gain = 793.477 ; free physical = 142593 ; free virtual = 320273
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 3715.328 ; gain = 710.234 ; free physical = 128016 ; free virtual = 326469
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 3715.336 ; gain = 795.047 ; free physical = 128012 ; free virtual = 326465
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3715.762 ; gain = 0.000 ; free physical = 142593 ; free virtual = 320273
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3715.336 ; gain = 0.000 ; free physical = 128012 ; free virtual = 326464
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3758.379 ; gain = 0.000 ; free physical = 142655 ; free virtual = 320336
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3757.953 ; gain = 0.000 ; free physical = 127928 ; free virtual = 326381
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -242,7 +242,7 @@ Synth Design complete, checksum: df1597b
 INFO: [Common 17-83] Releasing license: Synthesis
 28 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3772.316 ; gain = 858.066 ; free physical = 142568 ; free virtual = 320249
-INFO: [Common 17-1381] The checkpoint '/home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/design_1_wrapper.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3771.891 ; gain = 859.637 ; free physical = 127878 ; free virtual = 326331
+INFO: [Common 17-1381] The checkpoint '/home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 28 14:03:30 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 13:53:04 2026...

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1'
+HD_PWD='/home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

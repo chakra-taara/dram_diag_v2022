@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/chakra/work/dram_diag_2022/dram_diag_2022.runs/synth_1/design_1_wrapper.tcl"
+  variable script "/home/chakra/repos/dram_diag_v2022/dram_diag_2022.runs/synth_1/design_1_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,11 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param power.enableLutRouteBelPower 1
-set_param power.enableCarry8RouteBelPower 1
-set_param power.enableUnconnectedCarry8PinPower 1
-set_param chipscope.maxJobs 23
-set_param power.BramSDPPropagationFix 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xczu9cg-ffvb1156-2-i
 
@@ -82,19 +77,19 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/chakra/work/dram_diag_2022/dram_diag_2022.cache/wt [current_project]
-set_property parent.project_path /home/chakra/work/dram_diag_2022/dram_diag_2022.xpr [current_project]
+set_property webtalk.parent_dir /home/chakra/repos/dram_diag_v2022/dram_diag_2022.cache/wt [current_project]
+set_property parent.project_path /home/chakra/repos/dram_diag_v2022/dram_diag_2022.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo /home/chakra/work/dram_diag_2022/dram_diag_2022.cache/ip [current_project]
+set_property ip_output_repo /home/chakra/repos/dram_diag_v2022/dram_diag_2022.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib /home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
-add_files /home/chakra/work/dram_diag_2022/dram_diag_2022.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all /home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/chakra/work/dram_diag_2022/dram_diag_2022.gen/sources_1/bd/design_1/design_1_ooc.xdc]
+read_verilog -library xil_defaultlib /home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files /home/chakra/repos/dram_diag_v2022/dram_diag_2022.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all /home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_0/design_1_zynq_ultra_ps_e_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/chakra/repos/dram_diag_v2022/dram_diag_2022.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

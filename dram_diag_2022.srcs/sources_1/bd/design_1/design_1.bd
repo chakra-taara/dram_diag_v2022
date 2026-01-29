@@ -39,10 +39,10 @@
             "value": "##############################rxd#txd##############################################"
           },
           "PSU__ACT_DDR_FREQ_MHZ": {
-            "value": "799.992004"
+            "value": "933.323975"
           },
           "PSU__CRF_APB__ACPU_CTRL__ACT_FREQMHZ": {
-            "value": "1333.320068"
+            "value": "1199.988037"
           },
           "PSU__CRF_APB__DBG_FPD_CTRL__ACT_FREQMHZ": {
             "value": "249.997498"
@@ -51,22 +51,31 @@
             "value": "249.997498"
           },
           "PSU__CRF_APB__DDR_CTRL__ACT_FREQMHZ": {
-            "value": "399.996002"
+            "value": "466.661987"
           },
           "PSU__CRF_APB__DDR_CTRL__FREQMHZ": {
-            "value": "933.333"
+            "value": "934"
           },
           "PSU__CRF_APB__DPDMA_REF_CTRL__ACT_FREQMHZ": {
             "value": "599.994019"
           },
+          "PSU__CRF_APB__DPDMA_REF_CTRL__SRCSEL": {
+            "value": "APLL"
+          },
           "PSU__CRF_APB__GDMA_REF_CTRL__ACT_FREQMHZ": {
             "value": "599.994019"
+          },
+          "PSU__CRF_APB__GDMA_REF_CTRL__SRCSEL": {
+            "value": "APLL"
           },
           "PSU__CRF_APB__TOPSW_LSBUS_CTRL__ACT_FREQMHZ": {
             "value": "99.999001"
           },
           "PSU__CRF_APB__TOPSW_MAIN_CTRL__ACT_FREQMHZ": {
-            "value": "533.328003"
+            "value": "466.661987"
+          },
+          "PSU__CRF_APB__TOPSW_MAIN_CTRL__SRCSEL": {
+            "value": "DPLL"
           },
           "PSU__CRL_APB__ADMA_REF_CTRL__ACT_FREQMHZ": {
             "value": "533.328003"
@@ -108,10 +117,10 @@
             "value": "1"
           },
           "PSU__DDRC__CL": {
-            "value": "12"
+            "value": "13"
           },
           "PSU__DDRC__CWL": {
-            "value": "11"
+            "value": "12"
           },
           "PSU__DDRC__DEVICE_CAPACITY": {
             "value": "4096 MBits"
@@ -144,7 +153,7 @@
             "value": "0"
           },
           "PSU__DDR__INTERFACE__FREQMHZ": {
-            "value": "466.667"
+            "value": "467.000"
           },
           "PSU__PROTECTION__MASTERS": {
             "value": "USB1:NonSecure;0|USB0:NonSecure;0|S_AXI_LPD:NA;0|S_AXI_HPC1_FPD:NA;0|S_AXI_HPC0_FPD:NA;0|S_AXI_HP3_FPD:NA;0|S_AXI_HP2_FPD:NA;0|S_AXI_HP1_FPD:NA;0|S_AXI_HP0_FPD:NA;0|S_AXI_ACP:NA;0|S_AXI_ACE:NA;0|SD1:NonSecure;0|SD0:NonSecure;0|SATA1:NonSecure;0|SATA0:NonSecure;0|RPU1:Secure;1|RPU0:Secure;1|QSPI:NonSecure;0|PMU:NA;1|PCIe:NonSecure;0|NAND:NonSecure;0|LDMA:NonSecure;1|GPU:NonSecure;1|GEM3:NonSecure;0|GEM2:NonSecure;0|GEM1:NonSecure;0|GEM0:NonSecure;0|FDMA:NonSecure;1|DP:NonSecure;0|DAP:NA;1|Coresight:NA;1|CSU:NA;1|APU:NA;1"
